@@ -1,0 +1,8 @@
+# Whoami after exploitation
+nobody
+
+# Privilege Escalation
+root
+
+# /etc/shadow root hash
+root:$y$j9T$e8KohoZuo9Aaj1SpH7/pm1$mu9eKYYcNlRPCJ51dw8d71.aPH0ceBM0AKxAaiil7C5:19640:0:99999:7:::
