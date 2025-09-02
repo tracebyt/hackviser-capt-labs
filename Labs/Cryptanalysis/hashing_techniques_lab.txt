@@ -1,0 +1,20 @@
+# Hackviser CAPT Labs – Cryptanalysis & Hashing Techniques
+
+---
+
+## Lab 1: MD5 Hash Cracking
+**Overview:** MD5 is a cryptographic hash function producing a 128-bit digest (16 bytes) from input of any length.  
+**Task:** Hash: 8dbdda48fb8748d6746f1965824e966a  
+**Execution:**  
+hashcat -m 0 -a 0 8dbdda48fb8748d6746f1965824e966a /usr/share/wordlists/rockyou.txt  
+**Result:** Simple
+
+---
+
+## Lab 2: SHA1 Hash Cracking
+**Overview:** SHA1 produces a 160-bit (20-byte) hash, usually rendered as a 40-digit hexadecimal number.  
+**Task:** Hash: 7610bae85f2b530654cc716772f1fe653373e892  
+**Execution:**  
+echo "7610bae85f2b530654cc716772f1fe653373e892" > sha1_hash.txt  
+hashcat -m 100 -a 0 sha1_hash.txt /usr/share/wordlists/rockyou.txt  
+**Result:** Leonardo
